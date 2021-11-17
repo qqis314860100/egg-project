@@ -7,8 +7,12 @@
     "declarations": true
   },
   "dependencies": {
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "cz-conventional-changelog": "^3.3.0",
     "egg": "^2.15.1",
     "egg-init": "^2.3.0",
+    "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.11.0",
     "egg-view-ejs": "^2.0.1"
   },
@@ -20,6 +24,11 @@
     "egg-mock": "^3.21.0",
     "eslint": "^5.13.0",
     "eslint-config-egg": "^7.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
   "engines": {
     "node": ">=10.0.0"
@@ -34,7 +43,8 @@
     "cov": "egg-bin cov",
     "lint": "eslint .",
     "ci": "npm run lint && npm run cov",
-    "autod": "autod"
+    "autod": "autod",
+    "commit": "git-cz"
   },
   "ci": {
     "version": "10"

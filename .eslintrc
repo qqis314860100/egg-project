@@ -1,3 +1,11 @@
 {
-  "extends": "eslint-config-egg"
+  "extends": "eslint-config-egg",
+  "rules": {
+    // "no-unused-vars": ["off", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }]
+    "comma-dangle": ["off", "always-multiline"],
+    "arrow-parens":["off"],
+    "strict":"off",
+    "array-bracket-spacing":"off"
+  }
+
 }

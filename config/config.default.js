@@ -5,12 +5,12 @@
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
-module.exports = appInfo => {
+module.exports = (appInfo) => {
   /**
    * built-in config
    * @type {Egg.EggAppConfig}
    **/
-  const config = exports = {};
+  const config = (exports = {});
 
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1637061399355_7625';
@@ -30,7 +30,17 @@ module.exports = appInfo => {
     },
     domainWhiteList: ['*'],
   };
-
+  config.mysql = {
+    client: {
+      host: '47.105.36.18',
+      port: '3306',
+      user: 'root',
+      password: '123456',
+      database: 'test',
+    },
+    app: true,
+    agent: false,
+  };
   config.view = {
     mapping: { '.html': 'ejs' },
   };
