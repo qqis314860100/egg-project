@@ -36,13 +36,16 @@ module.exports = (appInfo) => {
       port: '3306',
       user: 'root',
       password: '123456',
-      database: 'test',
+      database: 'juejue-cost',
     },
     app: true,
     agent: false,
   };
   config.view = {
     mapping: { '.html': 'ejs' },
+  };
+  config.jwt = {
+    secret: 'tomtong',
   };
 
   return {
