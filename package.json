@@ -7,15 +7,19 @@
     "declarations": true
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
     "cz-conventional-changelog": "^3.3.0",
     "egg": "^2.15.1",
+    "egg-cors": "^2.2.3",
     "egg-init": "^2.3.0",
     "egg-jwt": "^3.1.7",
     "egg-mysql": "^3.0.0",
     "egg-scripts": "^2.11.0",
-    "egg-view-ejs": "^2.0.1"
+    "egg-view-ejs": "^2.0.1",
+    "mkdirp": "^1.0.4",
+    "moment": "^2.29.1"
   },
   "devDependencies": {
     "autod": "^3.0.1",
