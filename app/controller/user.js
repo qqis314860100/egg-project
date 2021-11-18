@@ -122,6 +122,7 @@ class UserController extends Controller {
       },
     };
   }
+  // 修改用户信息
   async editUserInfo() {
     const { ctx, app } = this;
 
@@ -144,9 +145,9 @@ class UserController extends Controller {
         code: 200,
         msg: '请求成功',
         data: {
-          id: user_id,
-          signature,
           avatar,
+          signature,
+          id: user_id,
           username: userInfo.userInfo,
         },
       };
